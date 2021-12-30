@@ -17,3 +17,9 @@ Resources:
       #Policies:
       # - S3ReadPolicy:
       #     BucketName: test-bucket
+      Policies:
+        - Effect: Allow
+          Resource:
+            - "*"
+          Action:
+            - SNS:Publish
